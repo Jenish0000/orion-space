@@ -1,0 +1,159 @@
+.aboutContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .aboutheader {
+    margin-top: 2rem;
+  }
+  
+  .aboutheader > .aboutHeading {
+    color: #ecdcdc;
+    font-weight: 700;
+    font-size: 2rem;
+    padding-left: 3rem;
+  }
+  
+  .aboutusMoto {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .aboutusMoto > .moto {
+    color: #000;
+    font-weight: 500;
+    font-size: 2rem;
+    padding-left: 3rem;
+    font-family: "Markazi Text", serif;
+  }
+  
+  .motoC {
+    color: #000;
+    font-weight: 500;
+    font-size: 1.9rem;
+    padding-left: 3rem;
+    font-family: "Markazi Text", serif;
+  }
+  
+  .aboutDescWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 3rem;
+    width: 600px;
+  }
+  
+  .aboutdesc {
+    font-size: 25px;
+    font-family: "Markazi Text", serif;
+    color: #ecdcdc;
+  }
+  
+  .rightImageContent {
+    display: grid;
+    grid-template-columns: repeat(2, 150px); 
+    grid-template-rows: repeat(2, 150px); 
+    gap: 5px; 
+    perspective: 1000px; 
+  }
+  
+  .aboutImage {
+    width: 150px;
+    height: 150px; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .rightImageContent:hover .aboutImage {
+    transform: rotateX(10deg) rotateY(10deg); 
+  }
+  
+
+  .rightImageContent:hover .aboutImage:nth-child(odd) {
+    transform: rotateX(-10deg) rotateY(-10deg);
+  }
+
+
+
+
+  @media only screen and (max-width: 1002px) {
+  .aboutheader > .aboutHeading {
+    font-size: 1rem;
+  }
+  .aboutusMoto > .moto {
+    color: #000;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding-left: 3rem;
+    font-family: "Markazi Text", serif;
+  }
+  
+  .motoC {
+    color: #000;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding-left: 3rem;
+    font-family: "Markazi Text", serif;
+  }
+  .aboutdesc {
+    font-size: 20px;
+}
+  }
+
+  @media only screen and (max-width: 918px) {
+    .aboutContainer{
+        flex-direction: column;
+        gap: 2rem;
+    }
+  }
+  @media only screen and (max-width: 588px) {
+    .aboutDescWrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 3rem;
+        width: 450px;
+      }
+      
+  }
+  @media only screen and (max-width: 456px) {
+    .aboutDescWrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 3rem;
+        width: 350px;
+      }
+      .aboutheader > .aboutHeading {
+        font-size: 14px;
+      }
+      .aboutusMoto > .moto {
+        color: #000;
+        font-weight: 500;
+        font-size: 1rem;
+        padding-left: 3rem;
+        font-family: "Markazi Text", serif;
+      }
+      
+      .motoC {
+        color: #000;
+        font-weight: 500;
+        font-size: 1rem;
+        padding-left: 3rem;
+        font-family: "Markazi Text", serif;
+      }
+      .aboutdesc {
+        font-size: 16px;
+    }
+  }
+
+
+  

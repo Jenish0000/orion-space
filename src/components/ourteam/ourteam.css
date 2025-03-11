@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+.textWrapper{
+   margin-bottom: 2rem;
+   margin-top:6rem;
+}
+.secondpagetextContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    flex-direction: column;
+    margin: 0;
+}
+.textHeadingTeams{
+    font-size: 3rem;
+    line-height:90px;
+    color: #fff;
+    padding-left: 4rem;
+    font-family: "Markazi Text", serif;
+    font-weight: 400;
+}
+.descWrapper{
+    width: 750px;
+}
+.textDiscription{
+    width: 100%;
+    font-size: 17px;
+    line-height: 40px;
+    color: #fff;
+    font-family: "Funnel Display", serif;
+    font-weight:lighter;
+}
+.askquestionContainer{
+    padding-left: 4rem;
+    padding-top: 2rem;
+}
+.askQuestion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 45px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius:10px;
+    font-family: "Funnel Display", serif;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+.askQuestion:hover{
+transform: scale(1.1);
+-webkit-box-shadow: 1px 0px 24px 4px rgba(0,0,0,0.61);
+-moz-box-shadow: 1px 0px 24px 4px rgba(0,0,0,0.61);
+box-shadow: 1px 0px 24px 4px rgba(0,0,0,0.61);
+}
+
+.askQuestion:hover .aeroplaneIcon {
+    animation: flyUp 1s ease forwards, returnFromBelow 0.5s ease 1.1s forwards;
+}
+
+@keyframes flyUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-55px);
+    }
+}
+
+@keyframes returnFromBelow {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+
+
+@media only screen and (max-width: 754px) {
+    .textHeadingTeams{
+        font-size: 2.7rem;
+        line-height:70px;
+    }
+    .descWrapper{
+        width: 550px;
+    }
+    .textDiscription{
+       width: 100%;
+       font-size: 20px;
+    }
+
+}
+@media only screen and (max-width: 570px) {
+    .textHeadingTeams{
+        font-size: 2rem;
+        line-height:50px;
+    }
+    .descWrapper{
+        width: 450px;
+    }
+    .textDiscription{
+       width: 100%;
+       font-size: 20px;
+    }
+}
+@media only screen and (max-width: 455px) {
+    .textHeadingTeams{
+        font-size: 1.5rem;
+    }
+    .descWrapper{
+        width: 350px;
+    }
+    .textDiscription{
+       width: 100%;
+       font-size: 18px;
+       line-height: 35px;
+    }
+    .askQuestion{
+        height: 40px;
+        padding: 10px;
+    }
+}

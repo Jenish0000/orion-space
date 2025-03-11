@@ -1,0 +1,210 @@
+.contactUsWrapper{
+margin-top: 10rem;
+}
+.firstFooter{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 4rem;
+}
+.fff .starIcon{
+    color: #d9dae5;
+    font-size: 15px;
+    margin-right: 2px;
+    margin-top: 2px;
+}
+.ppp{
+    color: #d9dae5;
+    font-family: "Markazi Text", serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.fff{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+}
+.bbb{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.lll,.ddd{
+    font-size: 2.3rem;
+    font-family: "Markazi Text", serif;
+}
+.lll{
+    color: #fff;
+}
+.darkStart{
+    color: #f5e0e0dd;
+}
+.ddd{
+    color: #f5e0e0dd;
+}
+.secondFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.moreLinks{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+.contactAt{
+    color: #d9dae5;
+    font-family: "Markazi Text", serif;
+    font-size: 17px;
+}
+.gmailHref{
+    color: #fff;
+    font-size: 20px;
+}
+.contactFooter{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footerCompanyName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+.capital{
+    color: rgb(227, 232, 232);
+}
+.footerlast{
+    font-size: 8rem;
+    font-family: "DM Serif Text", serif;
+    color: #fff;
+    letter-spacing: 4px;
+    position: relative;
+    margin-left: 3rem;
+}
+.absolute .footerRocket{
+    position: absolute;
+    top: 45px;
+    left: -100px;
+}
+.copyRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 1rem;
+    font-size: 20px;
+    font-family: "Markazi Text", serif;
+    font-size: 600;
+}
+.moreLinks:hover .fbIcon {
+    animation: popups 1s ease forwards;
+}
+.moreLinks:hover .instaIcon {
+    animation: popups 1s ease forwards;
+}
+
+.moreLinks:hover .linkedinIcon {
+    animation: popups 1s ease forwards;
+}
+
+.moreLinks:hover .telegramIcon {
+    animation: popups 1s ease forwards;
+}
+
+.moreLinks:hover .emailIcon {
+    animation: popups 1s ease forwards;
+}
+
+
+@keyframes popups {
+    0% {
+        transform: translateY(-20px) scale(0);
+    }
+    50%{
+        transform: translateY(10px) scale(1.1);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@media only screen and (max-width: 784px) {
+    .footerlast{
+        font-size: 6rem;
+        margin-left: 5rem;
+    }
+    .absolute .footerRocket{
+        position: absolute;
+        top: 3px;
+        left: -100px;
+    }
+}
+@media only screen and (max-width: 588px) {
+    .footerlast{
+        font-size: 4rem;
+        margin-left: 5rem;
+    }
+    .absolute .footerRocket{
+        position: absolute;
+        top: -20px;
+        left: -100px;
+    }
+    .lll,.ddd{
+        font-size: 2rem;
+    }
+    .secondFooter{
+       flex-direction: column;
+       gap: 2rem;
+    }
+    .copyRight{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        padding: 1rem;
+        font-size: 17px;
+        font-family: "Markazi Text", serif;
+        font-size: 600;
+    }
+    .contactAt{
+    font-size: 15px;
+    }
+    .gmailHref{
+    font-size: 19px;
+    }
+}
+@media only screen and (max-width: 476px) {
+    .lll,.ddd{
+        font-size: 1.2rem;
+    }
+    .footerlast{
+        font-size: 2rem;
+        margin-left: 5rem;
+    }
+    .absolute .footerRocket{
+        position: absolute;
+        top: -50px;
+        left: -100px;
+        font-size: 3rem;
+    }
+    .contactAt{
+        font-size: 13px;
+        }
+        .gmailHref{
+        font-size: 17px;
+        }
+}

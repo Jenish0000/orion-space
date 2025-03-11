@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+.banner {
+    width: 100%;
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: none;
+}
+
+.slider {
+    width: 160px; 
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: grab;
+    user-select: none;
+    transition: transform 0.2s ease-out;
+}
+
+.slider:active {
+    cursor: grabbing;
+}
+
+.slider .item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform: rotateY(calc(var(--position) * (360deg / 10))) translateZ(350px); /* Increased space between images */
+    transition: transform 0.2s ease-out;
+}
+
+.slider .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.spacer {
+    height: 1rem; 
+}
+
+.galleryHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 250px;   
+}
+
+.galleryHeading {
+    color: #fff;
+    letter-spacing: 0.1em;
+    font-family: "Funnel Display", serif;
+    font-weight: 600;
+    font-size: 9px;
+    text-transform: uppercase;
+}
+
+
+
+@media (max-width: 1024px) {
+    .banner{
+        height: 450px;
+    }
+    .slider {
+        width: 140px;
+        height: 180px;
+    }
+
+    .slider .item {
+        transform: rotateY(calc(var(--position) * (360deg / 10))) translateZ(300px); /* Increased space between images */
+    }
+
+    .spacer {
+        height: 1rem; /* Minimal gap */
+    }
+
+    .galleryHeading {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        width: 120px;
+        height: 160px;
+    }
+
+    .slider .item {
+        transform: rotateY(calc(var(--position) * (360deg / 10))) translateZ(250px); /* Increased space between images */
+    }
+
+    .galleryHeading {
+        font-size: 12px;
+        line-height: 180px;
+    }
+
+    .spacer {
+        height: 1rem; /* Minimal gap */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner{
+        height: 400px;
+    }
+    .slider {
+        width: 100px;
+        height: 140px;
+    }
+
+    .slider .item {
+        transform: rotateY(calc(var(--position) * (360deg / 10))) translateZ(200px); /* Increased space between images */
+    }
+
+    .galleryHeading {
+        font-size: 10px;
+        line-height: 160px;
+    }
+
+    .spacer {
+        height: 1rem; /* Minimal gap */
+    }
+}

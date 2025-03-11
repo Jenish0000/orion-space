@@ -1,0 +1,85 @@
+.wrapper
+{
+    padding:10px 10%;
+}
+.whyushead{
+    color: #fff;
+}
+.whyusheadp{
+    color: #fff;
+    margin-top: 1rem;
+}
+.whyusheadingPage{
+    color: #fff;
+    letter-spacing: 0.1em;
+    font-family: "Funnel Display", serif;
+    font-weight: 600;
+    font-size: 9px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 150px;
+}
+#card-area{
+    padding: 50px 0;
+}
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    height: 350px;
+    object-fit:cover;
+}
+.overlayWhyUs{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(to right, 
+    rgba(20, 20, 20, 0.9), 
+    rgba(40, 40, 40, 0.8), 
+    rgba(10, 10, 10, 0.95)
+);
+
+
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.overlay h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 80%;
+    font-family: "Funnel Display", serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.box:hover img{
+    transform: scale(1.2);
+}
+.box:hover .overlayWhyUs{
+    height: 100%;
+    font-family: "Funnel Display", serif;
+
+}

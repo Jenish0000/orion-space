@@ -1,0 +1,80 @@
+
+        .btnreadmoreWrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        .readmore{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            height: 50px;
+            width: 300px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            font-family: 'Segoe UI', Verdana, sans-serif;
+            transition: 0.3s ease-in-out;
+            background:  rgb(96, 108, 136);
+            color: #fff;
+            border-radius: 10px;
+            border: 2px dotted #fff;
+        }
+        .readmore:hover {
+            transform: scale(1.1);
+            box-shadow: 13px 16px 55px 9px rgba(221, 208, 208, 0.75);
+            -webkit-box-shadow: 13px 16px 55px 9px rgba(221, 208, 208, 0.75);
+            -moz-box-shadow: 13px 16px 55px 9px rgba(221, 208, 208, 0.75);
+          }
+
+.overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .overlay-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    position: relative;
+    height: 80vh;
+    overflow: scroll;
+  }
+  
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: gray;
+  }
+  
+  .close-btn:hover {
+    color: black;
+  }
+       
+  .overlayHeading{
+  font-size: 2rem;
+  font-family: "Funnel Display", serif;
+  }
+  .overlaydisc{
+    font-size: 27px;
+    font-family: "Markazi Text", serif;
+    line-height: 40px;
+  }

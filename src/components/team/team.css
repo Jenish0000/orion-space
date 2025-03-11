@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+.teamHeading{
+    font-size:9px;
+    line-height:200px;
+    color: #fff;
+    font-family: "DM Serif Text", serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.scale:hover {
+transform: scale(1.2);
+}
+.teamfirstImage{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit:cover;
+    -webkit-box-shadow: 0px 0px 42px -12px rgba(9,18,44,1);
+-moz-box-shadow: 0px 0px 42px -12px rgba(9,18,44,1);
+box-shadow: 0px 0px 42px -12px rgba(9,18,44,1);
+}
+.firstrightImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.firstImageWrapper{
+    height: 350px;
+    width: 280px;
+    background:#5C7285;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px dotted #fff;
+    -webkit-box-shadow: 0px 0px 42px -12px rgba(9,18,44,1);
+-moz-box-shadow: 0px 0px 42px -12px rgba(9,18,44,1);
+box-shadow: 0px 0px 42px -12px rgba(9,18,44,1);
+}
+.firstleftImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 2rem;
+    flex-direction: column;
+}
+.rightImagesContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.name{
+  color: #fff;
+  font-family: "Markazi Text", serif;
+  font-size:23px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.post{
+color: rgb(181, 181, 181);
+font-family: "Markazi Text", serif;
+font-size:19px;
+}
+.iconsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+@media only screen and (max-width: 620px) {
+    .rightImagesContainer{
+        flex-wrap: wrap;
+    }
+    .firstleftImage{
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+.storeproductOneImage{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.rightStoreContent{
+    height: 400px;
+    width: 400px;
+}
+.productOneOfStore{
+    font-size: 19px;
+    text-align: left;
+    font-family: "Funnel Display", serif;
+    font-weight: 800;
+    color: rgb(229, 189, 194);
+    letter-spacing: 1.3px;
+    border-bottom: 2px solid #fff;
+}
+.productOneOfStoreDisc{
+    font-size: 25px;
+    text-align:justify;
+    font-family: "Markazi Text", serif;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 2rem;
+}
+.storeBuyBtnWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.storeBuyBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right, rgb(96, 108, 136), rgb(63, 76, 107));
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 2rem;
+}
+.storeBuyBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 13px 16px 55px 9px rgba(221, 208, 208, 0.75);
+    -webkit-box-shadow: 13px 16px 55px 9px rgba(221, 208, 208, 0.75);
+    -moz-box-shadow: 13px 16px 55px 9px rgba(221, 208, 208, 0.75);
+  }
+  .storeContent{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 2rem;
+     margin-top: 3rem;
+  }
+  @media only screen and (max-width: 856px) {
+    .storeContent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+  }
+  @media only screen and (max-width:428px) {
+    .storeproductOneImage{
+        width: 340px;
+    }
+    .rightStoreContent{
+        width: 340px;
+    }
+    .productOneOfStore{
+        font-size: 17px;
+    }
+  }

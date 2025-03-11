@@ -1,0 +1,193 @@
+.contactUsContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactusWrapper{
+  height: 400px;
+  width: 650px;
+  background: linear-gradient(to right, rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153));
+  -webkit-box-shadow: -4px 3px 67px 9px rgba(189,189,189,1);
+  -moz-box-shadow: -4px 3px 67px 9px rgba(189,189,189,1);
+  box-shadow: -4px 3px 67px 9px rgba(189,189,189,1);
+  margin-top: 3rem;
+  border-radius: 30px;
+}
+.contactusContent{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 2rem
+}
+.leftContactUsContent{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 3rem;
+}
+.contactLocation{
+  width: 300px;
+}
+.contactUst{
+  color:#FFEDFA;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.contactUsP{
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.rightContactUsContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.nameBox{
+  display: flex;
+  align-items: flex-start;
+  justify-content:flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+.QueryBox{
+  display: flex;
+  align-items: flex-start;
+  justify-content:flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.MessageBox{
+  display: flex;
+  align-items: flex-start;
+  justify-content:flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label{
+  color: #fff;
+  font-family: "Funnel Display", serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+.nameInput{
+  height: 25px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+.queryInput{
+  height: 25px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 17px;
+  transition: 0.3s ease;
+}
+.messageInput{
+  height: 100px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 17px;
+  transition: 0.3s ease;
+  resize: none;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  padding: 10px;
+  max-lines:5;
+}
+.nameInput:focus {
+  height: 30px;
+  transform: scale(1.1);
+}
+.queryInput:focus{
+  height: 30px;
+  transform: scale(1.1);
+}
+.sendBox{
+  position: relative;
+}
+.contactsendBtn{
+  position: absolute;
+  left: 22px;
+  top: 140px;
+}
+@media only screen and (max-width: 702px) {
+  .contactusContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .contactusWrapper{
+    height: 100%;
+    width: 400px;
+  }
+  .leftContactUsContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+  .contactLocation{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   font-size: 14px;
+  }
+  .contactCallus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  flex-direction: column;
+  }
+  .contactMailUs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contactsendBtn{
+    top: 150px;
+    left: 175px;
+  }
+}
+
+
+@media only screen and (max-width: 465px) {
+  .contactusWrapper{
+    height: 100%;
+    width: 350px;
+  }
+  .contactsendBtn{
+    top: 355px;
+    left: -15px;
+  }
+
+}
+@media only screen and (max-width: 358px) {
+  .contactusContent{
+    width: 300px;
+  }
+}
+
+

@@ -1,0 +1,38 @@
+.sanosatTwoheadingWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headingforsanosatTwo{
+    font-family: "Funnel Display", serif;
+    color: #fff;
+}
+.secondSanosatImage{
+    height: 400px;
+    width: 400px;
+}
+.contentsSecondSanosat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+.lefttextwrapper{
+    width: 400px;
+    height: 400px;
+    overflow: scroll;
+    text-align: left;
+    padding: 1rem;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.lesttextforSanosatTwo{
+    font-family: "Markazi Text", serif;
+    font-size:22px;
+}
+@media only screen and (max-width: 835px) {
+    .contentsSecondSanosat{
+        flex-direction: column;
+    }
+}
