@@ -95,7 +95,7 @@ const Footer = () => {
         }}
         />2025 Orion space. All rights reserved.
       </p>
-      <h5>#Note : Designed & Developed by <a href="https://jenishportfolio-gules.vercel.app/">Jenish Karki</a> </h5>
+          <h5>#Note : Designed & Developed by <a href="https://jenishportfolio-gules.vercel.app/">Jenish Karki</a> </h5>
     </div>
   </div>
 </div>
